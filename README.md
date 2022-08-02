@@ -6,20 +6,24 @@
 
 ## Setup
 
-1. Clone this repo into ~/.config/nvim:
+1. Clone this repo into `~/.config/nvim`:
 ```shell
 git clone git@github.com:shlyn/neovim-dotfiles.git ~/.config/nvim
 ```
 
 2. Install plugins list
-`:PackerSync`
+```shell
+nvim +PackerSync
+```
 
-This setup uses the modern LSP system for language support, things like auto-complete, symbols tree, etc..., 
+3. LSP support
+This setup uses the modern LSP system for language support, 
+things like auto-complete, symbols tree, etc..., 
 which requires a LSP server outside the editor. Fortunately nvim-lspconfig manages to configure most of the LSP server options for us, all we need to do is to install the LSP servers themselves:
 
 In lua/configs/autocomplete.lua, line 108, edit the list of LSP servers, a complete list of supported LSP servers is listed here. After that install the corresponding servers on your OS, auto-complete should pop up for supported languages now :)
 
-Final step, smart highlighting using treesitter!
+4. smart highlighting using treesitter!
 The default vim regex-based highlighting is pretty lame, for NVIM, treesitter offered an advanced code highlighting that can make your code much cleaner
 You can use the :TSInstall <lang> command to install a parser for a language
 Alternatively, in lua/configs/treesitter.lua, line 6, you can have a list of parsers that will be updated every time you use the :TSUpdate or :TSUpdateSync command (the latter is for synchronized updating), or you can just install all maintained parsers by uncommenting line 5 and commenting line 6

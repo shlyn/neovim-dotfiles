@@ -4,7 +4,9 @@ vim.cmd('filetype plugin indent on')
 
 vim.opt.number          = true
 vim.opt.relativenumber  = true
+
 vim.opt.termguicolors   = true
+
 vim.opt.shiftround      = true
 vim.opt.updatetime      = 100
 
@@ -47,13 +49,13 @@ require("core.theme")
 -- plugins without extra configs are configured directly here
 require("impatient")
 
-require("configs.nvimlsp").config()
-require("configs.autocomplete").config()
-require("configs.statusline").config()
-require("configs.filetree").config()
-require("configs.treesitter").config()
-require("configs.outlinetree").config()
-require("configs.startscreen").config()
-require("configs.git").config()
-require("configs.bufferline").config()
-require("configs.grammar").config()
+require("config.nvimlsp").config()
+require("config.autocomplete").config()
+require("config.statusline").config()
+require("config.filetree").config()
+require("config.treesitter").config()
+require("config.outlinetree").config()
+require("config.startscreen").config()
+require("config.git").config()
+require("config.bufferline").config()
+require("config.grammar").config()

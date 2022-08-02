@@ -1,11 +1,10 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
--- @TODO: 自动检测是否需要下载安装packer.nvim插件管理器
-
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
+	-- packer can manager itself
 	use 'wbthomason/packer.nvim'
 
 	-- starup time optimise
@@ -24,24 +23,17 @@ return require('packer').startup(function()
 	use 'sainnhe/sonokai'
 	use 'tiagovla/tokyodark.nvim'
 
-	--    use 'joshdick/onedark.vim'
-	--    use { 'catppuccin/nvim', as='catppuccin' }
-	--    use { 'sonph/onehalf', rtp='vim/' }
-	--    use 'liuchengxu/space-vim-dark'
-	--    use 'ahmedabdulrahman/aylin.vim'
-
 	use "rebelot/kanagawa.nvim"
 	use 'NLKNguyen/papercolor-theme'
 	use 'liuchengxu/space-vim-dark'
 
-	-- file tree
+	-- nvim-tree for file tree
 	use {
 		'kyazdani42/nvim-tree.lua',
 		requires = 'kyazdani42/nvim-web-devicons'
 	}
 
 	-- language server protocol
-	-- use 'neovim/nvim-lspconfig'
 	use {
 		"williamboman/nvim-lsp-installer",
 		"neovim/nvim-lspconfig",
@@ -52,6 +44,7 @@ return require('packer').startup(function()
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
 	use 'L3MON4D3/LuaSnip'
+
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'onsails/lspkind-nvim'
 
@@ -86,6 +79,5 @@ return require('packer').startup(function()
 	use 'leslie255/aleph-nvim'
 
 	-- english grammar check
-	use 'rhysd/vim-grammarous'
-
+	-- use 'rhysd/vim-grammarous'
 end)
