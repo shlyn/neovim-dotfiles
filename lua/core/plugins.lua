@@ -41,7 +41,7 @@ return require('packer').startup(function()
 	}
 
 	-- language server protocol
-	use 'neovim/nvim-lspconfig'
+	-- use 'neovim/nvim-lspconfig'
 	use {
 		"williamboman/nvim-lsp-installer",
 		"neovim/nvim-lspconfig",

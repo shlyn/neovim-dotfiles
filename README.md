@@ -8,7 +8,7 @@
 
 1. Clone this repo into ~/.config/nvim:
 ```shell
-  git clone git@github.com:shlyn/neovim-dotfiles.git ~/.config/nvim
+git clone git@github.com:shlyn/neovim-dotfiles.git ~/.config/nvim
 ```
 
 2. Install plugins list
