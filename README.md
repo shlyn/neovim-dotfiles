@@ -42,5 +42,5 @@ don't just DM me on social media because others may run into the same problem an
 Discussions could be in either English or Chinese, although English is preferred
 
 Adding more things
-For now, you don't, this is my personal config, although do leave suggestions if you have any
+For now, you don't, this is my personal config, although do leave suggestions if you have any.
 
